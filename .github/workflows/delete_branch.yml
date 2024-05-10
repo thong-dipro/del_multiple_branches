@@ -1,5 +1,7 @@
 name: Delete branch
-on: [push, pull_request]
+on:
+  label:
+    types: [created, edited]
 permissions: write-all
 jobs:
   delete_branches:
