@@ -1,0 +1,2 @@
+- name: Delete multiple branches
+  uses: dawidd6/action-delete-branch@v3.1.0
