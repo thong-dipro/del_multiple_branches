@@ -1,6 +1,5 @@
 name: Delete branch
-on:
-  workflow_call:
+on: [push, pull_request]
 jobs:
   build_example:
     runs-on: ubuntu-latest
