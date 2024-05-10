@@ -8,4 +8,4 @@ jobs:
       uses: thong-dipro/action-delete-branch@v1
       with:
         github_token: ${{github.token}}
-        prefix: dev
+        exclude: main
