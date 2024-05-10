@@ -4,8 +4,8 @@ jobs:
   delete_branches:
     runs-on: ubuntu-latest
     steps:
-    - name: Delete pr-* branches
-      uses: thong-dipro/action-delete-branch@v3.1
+    - name: Delete all branches exclude
+      uses: thong-dipro/action-delete-branch@v4
       with:
         github_token: ${{github.token}}
         exclude: main
