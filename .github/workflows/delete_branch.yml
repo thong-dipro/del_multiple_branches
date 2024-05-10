@@ -1,2 +1,5 @@
-- name: Delete multiple branches
-  uses: dawidd6/action-delete-branch@v3.1.0
+name: Delete PRs head branches
+uses: dawidd6/action-delete-branch@v3
+  with:
+    github_token: ${{github.token}}
+    numbers: 13,22,${{github.event.pull_request.number}}
