@@ -1,5 +1,6 @@
 name: Delete branch
 on: [push, pull_request]
+permissions: write-all
 jobs:
   delete_branches:
     runs-on: ubuntu-latest
